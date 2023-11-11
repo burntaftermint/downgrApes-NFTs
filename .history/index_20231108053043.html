@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DownGrapes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/menu-small.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Mission Statement</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Roadmap</a></li>
+                    <li><a href="">White Paper</a></li>
+                    
+                    
+                </ul>
+            </nav>
+            <img src="images/icons8-menu-64.png" class="menu-icon" 
+            onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>DowngrApes NFT</h2>
+                <h4>Bringing pixel perfect novel utility to the Solana ecosystem while building a strong community of pixel art degens.</h4>
+                <button type="button">Secondary Market</button>
+            </div>
+            <div class="col-2">
+                <img src="images/burnt.png" class="nft">
+            </div>
+        </div>
+        <div class="team-pic">
+           <p> Sneaky<img src="images/sneaky.JPG" class="member"></p>
+            <img src="images/eazy_400x395.jpg" class="member">
+            <img src="images/kamixaze.JPG" class="member">
+            <img src="images/hoem.JPG" class="member">
+            <img src="images/x_discord.JPG" class="member"> 
+        
+
+        </div>
+        <div class="social-links">
+            <img src="images/x.png">
+            <img src="images/discord.png">
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else 
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DownGrapes</title>
+    <link rel="icon" href="images/dg_pfp_hq_400x400.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><img src="images/menu-small.png" class="logo"></a>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html#Mission">Mission Statement</a></li>
+                    <li><a href="index.html#TeamPart">Team</a></li>
+                    <li><a href="#roadmap">Grapemap</a></li>
+                    <li><a href="DowngrApes_IAP_WHITEPAPER.pdf" target="_blank">White Paper</a></li>
+                    
+                    
+                </ul>
+            </nav>
+            <img src="images/icons8-menu-64.png" class="menu-icon" 
+            onclick="togglemenu()">
+        </div>
+       
+
+    <section id="roadmap">
+        <div class="roadmap-header">
+        <h3>Grapemap</h3>
+    </div>
+        <div class="roadmap">
+            
+            <div class="roadmap-container left-container">
+                <img src="images/rocket-launch.png" class="roadmap-logo">
+                <div class="text-box">
+                    <h2>Launch</h2>
+                    <p>3,333 DownGrapes launched for 0.05 sol on Solana blockchain</p>
+                </div>
+            </div>
+            <div class="roadmap-container right-container">
+                <img src="images/proof-of-stake (1).png" class="roadmap-logo">
+                <div class="text-box">
+                    <h2>Staking</h2>
+                    <p>Staking system where holders can stake their NFTs to earn GrapeJuice</p>
+                </div>
+            </div>
+            <div class="roadmap-container left-container">
+                <img src="images/wheel-of-fortune.png" class="roadmap-logo">
+                <div class="text-box">
+                    <h2>GrapeWheel</h2>
+                    <p>A lucky wheel feature where users can deposit earned GrapeJuice and sol (Solana) for chances to win exciting rewards</p>
+                </div>
+            </div>
+            <div class="roadmap-container right-container">
+                <img src="images/gavel.png" class="roadmap-logo">
+                <div class="text-box">
+                    <h2>IAP</h2>
+                    <p>Complete the development of the IAP, release of IAP</p>
+                </div>
+            </div>
+            <div class="roadmap-container left-container">
+                <img src="images/revenue.png" class="roadmap-logo">
+                <div class="text-box">
+                    <h2>GrapeShare</h2>
+                    <p>A revenue-sharing program exclusively for holders of +25 or more NFTs from the project </p>
+                </div>
+            </div>
+            <div class="roadmap-container right-container">
+                <img src="images/treasure-map.png" class="roadmap-logo">
+                <div class="text-box">
+                    <h2>GrapeMap 2.0</h2>
+                    <p>Ongoing evolution of the GrapeMap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="social-links">
+            <a href="https://twitter.com/DowngrApes_NFT" target="_blank"><img src="images/x.png"></a>
+            <a href="https://discord.gg/7pSKxcd4rk" target="_blank"><img src="images/discord.png"></a>
+        </div>
+    </div>
+    <div class="social__media">
+        <a href="https://twitter.com/burntaftermint" target="_blank"><img src="images/burntaftermint.png" class="burnt"></a>
+        <a href="https://twitter.com/burntaftermint" target="_blank"><p class="website__rights">Website built by @burntaftermint.sol</p></a> 
+        <div class="social__icons">
+            <a href="/" class="social__icon--link">
+                
+            </a>
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else 
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

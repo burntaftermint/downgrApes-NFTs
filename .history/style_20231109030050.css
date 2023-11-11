@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+    
+}
+
+body {
+    background-color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: rgb(211, 43, 226);
+}
+
+.row {
+    color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2 {
+    font-size: 54px;
+}
+
+.col-1 h4 {
+    font-size: 30px;
+    color: rgb(211, 43, 226);
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #f8f8f8;
+    background: linear-gradient(to right, rgb(43, 186, 226), rgb(211, 43, 226));
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.col-1::after {
+    content: '';
+    width: 10px;
+    height:85%;
+    background: linear-gradient( rgb(43, 186, 226), rgb(211, 43, 226));
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .nft {
+    width: 70%;
+    padding-left: 100px;
+}
+
+.social-links img {
+    height: 35px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.team-pic {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    object-fit: cover;
+    justify-content: center; 
+}
+
+.member {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 5px;
+}
+
+.member:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.member-link {
+    text-decoration: solid;
+    color: #f8f8f8;
+}
+
+.member-link:hover {
+    color: rgb(211, 43, 226);
+}
+
+.roadmap {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.roadmap-header {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    color: #f8f8f8;
+    font-size: 50px;
+    text-align: center;
+}
+
+.roadmap-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 40%;
+}
+
+.text-box {
+    color: black;
+    padding: 20px 20px;
+    background: #f8f8f8;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    
+}
+
+.roadmap-container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 20%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -20px;
+}
+
+.roadmap::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+
+
+.team-card h3 {
+    color: #f8f8f8;
+    font-size: 54px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.team-card p {
+    color: rgb(211, 43, 226);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.social__media {
+    
+    color: #fff;
+    text-align: center;
+    
+}
+
+.roadmap h3 {
+    color: #f8f8f8;
+    font-size: 54px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width:700px) {
+    nav ul {
+        width: 50%;
+        background: transparent;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2 {
+        flex-basis: 100%;
+        margin-right: 90px;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .col-2 .nft {
+        width: 100%;
+    }
+
+    .col-1 {
+        flex-basis: 100%;
+    }
+
+    .col-1 h2 {
+        font-size: 35px;
+    }
+
+    .col-1 h4 {
+        font-size: 20px;
+    }
+
+    .team-card h3 {
+        color: #f8f8f8;
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .team-card p {
+        color: rgb(211, 43, 226);
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+}
+

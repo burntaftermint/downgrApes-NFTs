@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DownGrapes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/menu-small.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#Mission">Mission Statement</a></li>
+                    <li><a href="#TeamPart">Team</a></li>
+                    <li><a href="#roadmap">Grapemap</a></li>
+                    <li><a href="">White Paper</a></li>
+                    
+                    
+                </ul>
+            </nav>
+            <img src="images/icons8-menu-64.png" class="menu-icon" 
+            onclick="togglemenu()">
+        </div>
+        <section id="Mission">
+        <div class="row">
+            <div class="col-1">
+                <h2>DowngrApes NFT</h2>
+                <h4>Bringing pixel perfect novel utility to the Solana ecosystem while building a strong community of pixel art degens.</h4>
+                <a href="https://magiceden.io/marketplace/downgrapes" target="_blank"><button type="button">Secondary Market</button></a>
+            </div>
+            <div class="col-2">
+                <img src="images/burnt.png" class="nft">
+            </div>
+        </div>
+    </section>
+    <section id="TeamPart">
+        <div class="team-card">
+        <h3 id="#TeamPart">Team</h3>
+        <p><a href="https://twitter.com/Sn34ky_Steve" target="_blank" class="member-link">SN34KY: Artist/Co-founder</a> | 
+            <a href="https://twitter.com/KamixazeAblaze" target="_blank" class="member-link">Kamixaze: Community Manager</a>
+             | <a href="https://twitter.com/TheYoungMentor" target="_blank" class="member-link">Gio.sol: Collab Manager</a>
+              | <a href="https://twitter.com/ncylineInvest" target="_blank" class="member-link">Ncyline: Marketing Manager</a>
+               | <a href="https://twitter.com/baltimore465" target="_blank" class="member-link">X: Discord Founder & Manager</a>
+                | <a href="https://twitter.com/H03M_sol" target="_blank" class="member-link">HO3M: Advisor</a>
+                 | <a href="https://twitter.com/Eazy7__" target="_blank" class="member-link">EAZY: Moderator</a></p>
+    </div>
+        <div class="team-pic">
+            
+            <a href="https://twitter.com/Sn34ky_Steve" target="_blank"><img src="images/sn34ky_.png" class="member"></a>
+            <a href="https://twitter.com/KamixazeAblaze" target="_blank"><img src="images/kami.PNG" class="member"></a>
+            <a href="https://twitter.com/TheYoungMentor" target="_blank"><img src="images/gio.JPG" class="member"></a>
+            <a href="https://twitter.com/ncylineInvest" target="_blank"><img src="images/ncyline.PNG" class="member"></a>
+            <a href="https://twitter.com/baltimore465" target="_blank"><img src="images/x_discord.JPG" class="member"></a>
+            <a href="https://twitter.com/H03M_sol" target="_blank"><img src="images/hoem.JPG" class="member"></a>
+            <a href="https://twitter.com/Eazy7__" target="_blank"><img src="images/eazy_400x395.jpg" class="member"></a>
+            
+        
+
+        </div>
+    </section>
+
+    <section id="roadmap">
+        <div class="roadmap">
+            <h3>Grapemap</h3>
+            <div class="roadmap-container">
+                <div class="text-box">
+                    <h2>Launch</h2>
+                    <p>3,333 DownGrapes launched for 0.05 sol on Solana blockchain</p>
+                </div>
+            </div>
+            <div class="roadmap-container">
+                <div class="text-box">
+                    <h2>Staking</h2>
+                    <p>Staking system where holders can stake their NFTs to earn GrapeJuice</p>
+                </div>
+            </div>
+            <div class="roadmap-container">
+                <div class="text-box">
+                    <h2>GrapeWheel</h2>
+                    <p>A lucky wheel feature where users can deposit earned GrapeJuice and sol (Solana) for chances to win exciting rewards</p>
+                </div>
+            </div>
+            <div class="roadmap-container">
+                <div class="text-box">
+                    <h2>IAP</h2>
+                    <p>Complete the development of the IAP, release of IAP</p>
+                </div>
+            </div>
+            <div class="roadmap-container">
+                <div class="text-box">
+                    <h2>GrapeShare</h2>
+                    <p>A revenue-sharing program exclusively for holders of +25 or more NFTs from the project </p>
+                </div>
+            </div>
+            <div class="roadmap-container">
+                <div class="text-box">
+                    <h2>GrapeMap 2.0</h2>
+                    <p>Ongoing evolution of the GrapeMap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="social-links">
+            <a href="https://twitter.com/DowngrApes_NFT" target="_blank"><img src="images/x.png"></a>
+            <a href="https://discord.gg/7pSKxcd4rk" target="_blank"><img src="images/discord.png"></a>
+        </div>
+    </div>
+    <div class="social__media">
+       
+        <p class="website__rights">Built by @burntaftermint.sol</p>
+        <div class="social__icons">
+            <a href="/" class="social__icon--link">
+                
+            </a>
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else 
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
